@@ -4,24 +4,19 @@ import { profile } from "../data";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative scroll-mt-24 overflow-hidden py-28">
-      {/* Glow behind the CTA */}
-      <div
-        aria-hidden
-        className="absolute left-1/2 top-1/2 h-[380px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-15 blur-[110px]"
-        style={{ background: "linear-gradient(100deg, var(--color-accent), var(--color-accent-2))" }}
-      />
-
-      <div className="relative mx-auto max-w-3xl px-5 text-center">
+    <section id="contact" className="scroll-mt-24 py-28">
+      <div className="mx-auto max-w-3xl px-5 text-center">
         <Reveal>
-          <span className="chip">Contact</span>
-          <h2
-            className="mt-5 text-4xl font-bold sm:text-5xl"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Let's build something <span className="text-gradient">together</span>
+          <span className="eyebrow justify-center">Sector 05 // Pit wall</span>
+          <h2 className="mt-5 text-5xl font-bold sm:text-6xl">
+            Box box —{" "}
+            <span style={{ color: "var(--fastest)" }}>let's talk</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-[--color-muted]">
+          <span className="kerb mx-auto" aria-hidden />
+          <p
+            className="mx-auto mt-6 max-w-xl text-lg leading-relaxed"
+            style={{ color: "var(--muted)" }}
+          >
             I'm currently looking for software engineering internships. If you think
             I'd be a good fit for your team — or just want to talk code — my inbox is open.
           </p>
