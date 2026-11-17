@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github } from "lucide-react";
 import { profile } from "../data";
+import CircuitMap from "./CircuitMap";
 
 /** Faint telemetry traces that draw themselves in on load. */
 function Telemetry() {
@@ -74,6 +75,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden">
       <div className="graph-bg absolute inset-0" aria-hidden />
+      <CircuitMap className="absolute -right-[6%] top-[8%] hidden w-[58%] max-w-[760px] opacity-70 md:block" />
       <Telemetry />
 
       <div className="relative mx-auto w-full max-w-6xl px-5 pb-24 pt-28">
@@ -124,7 +126,7 @@ export default function Hero() {
           </div>
 
           {/* Pit board */}
-          <motion.div variants={rise} transition={{ duration: 0.7 }}>
+          <motion.div variants={rise} transition={{ duration: 0.7 }} className="lg:self-end">
             <div className="pitboard">
               <div className="pitboard-row">
                 <span className="pitboard-key">Driver</span>

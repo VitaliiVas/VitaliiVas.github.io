@@ -5,7 +5,7 @@ import { profile, skills } from "../data";
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-24">
-      <SectionHeading sector="01" label="Driver profile" title="A bit about me" />
+      <SectionHeading sector="01" label="Driver profile" title="A bit about me" time="28.442" />
 
       <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr]">
         <Reveal>

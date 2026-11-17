@@ -6,7 +6,7 @@ import { testimonials } from "../data";
 export default function Testimonials() {
   return (
     <section id="testimonials" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-24">
-      <SectionHeading sector="04" label="Team radio" title="What people say" />
+      <SectionHeading sector="04" label="Team radio" title="What people say" time="24.313" />
 
       <div className="grid gap-6 md:grid-cols-2">
         {testimonials.map((t, i) => (

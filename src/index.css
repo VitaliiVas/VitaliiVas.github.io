@@ -414,13 +414,83 @@ h3 {
   .wave span { animation: none; }
 }
 
-/* ---------- checkered footer strip ---------- */
+/* ---------- finish-line footer band ---------- */
 .checker-strip {
-  height: 16px;
+  height: 40px;
   background: repeating-conic-gradient(
       var(--ink) 0% 25%,
       var(--tarmac) 0% 50%
     )
-    0 0 / 16px 16px;
+    0 0 / 20px 20px;
+  opacity: 0.9;
+}
+
+/* full-width kerb divider */
+.kerb-wide {
+  height: 10px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--kerb-red) 0 16px,
+    var(--kerb-white) 16px 32px
+  );
   opacity: 0.85;
+}
+
+/* ---------- timing tower (left-edge scrollspy) ---------- */
+.timing-tower {
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  z-index: 40;
+  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 2px;
+}
+.tower-row {
+  display: grid;
+  grid-template-columns: 1.4rem 5.8rem 3.2rem;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--tarmac) 72%, transparent);
+  border-left: 3px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.tower-row:hover {
+  color: var(--ink);
+}
+.tower-row--active {
+  color: var(--ink);
+  background: var(--pit);
+  border-left-color: var(--fastest);
+}
+.tower-pos {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+.tower-row--active .tower-pos {
+  color: var(--fastest);
+}
+.tower-name {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.tower-gap {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- section heading time readout ---------- */
+.sector-time {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.sector-time--fastest {
+  color: var(--fastest);
 }

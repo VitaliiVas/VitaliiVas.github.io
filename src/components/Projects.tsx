@@ -6,7 +6,13 @@ import { projects } from "../data";
 export default function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-24">
-      <SectionHeading sector="02" label="Race entries" title="Things I've built" />
+      <SectionHeading
+        sector="02"
+        label="Race entries"
+        title="Things I've built"
+        time="31.077"
+        fastest
+      />
 
       <div className="flex flex-col gap-8">
         {projects.map((project, i) => (

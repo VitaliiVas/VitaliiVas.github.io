@@ -7,7 +7,12 @@ export default function Resume() {
   return (
     <section id="resume" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-24">
       <div className="flex flex-wrap items-end justify-between gap-6">
-        <SectionHeading sector="03" label="Stint history" title="Education & experience" />
+        <SectionHeading
+          sector="03"
+          label="Stint history"
+          title="Education & experience"
+          time="26.901"
+        />
         <Reveal className="mb-12">
           <a href={profile.resumeFile} download className="btn-ghost !text-sm">
             <Download size={15} /> Download resume
