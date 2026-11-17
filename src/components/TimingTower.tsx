@@ -30,7 +30,7 @@ export default function TimingTower() {
   }, []);
 
   return (
-    <aside className="timing-tower hidden xl:flex" aria-label="Section navigation">
+    <aside className="timing-tower hidden 2xl:flex" aria-label="Section navigation">
       {rows.map((r, i) => (
         <a
           key={r.id}
